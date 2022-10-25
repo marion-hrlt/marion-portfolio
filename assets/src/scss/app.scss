@@ -2,3 +2,12 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+// Utils
+@import "utils/mixins";
+
+// Global
+@import "global/fonts";
+
+// Layout
+@import "layouts/hero";
