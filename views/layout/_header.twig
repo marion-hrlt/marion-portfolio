@@ -1,0 +1,25 @@
+<header id="header">
+
+	<div class="max-w-7xl mx-auto py-2 flex items-baseline justify-between">
+
+		<div class="navigation items-baseline px-5 hidden md:flex">
+
+			<a href="{{ site.url }}" class="text-3xl font-extrabold text-gray-900 mr-8 transition ease-in-out duration-300 hover:text-gray-700 dark:text-zinc-200">
+				<svg width="100" height="45" viewBox="0 0 100 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M63.612 15.164C66.012 15.164 67.92 15.884 69.336 17.324C70.776 18.764 71.496 20.936 71.496 23.84V35H64.656V24.956C64.656 23.588 64.392 22.58 63.864 21.932C63.36 21.284 62.64 20.96 61.704 20.96C60.672 20.96 59.844 21.32 59.22 22.04C58.596 22.76 58.284 23.852 58.284 25.316V35H51.444V24.956C51.444 22.292 50.46 20.96 48.492 20.96C47.436 20.96 46.596 21.32 45.972 22.04C45.348 22.76 45.036 23.852 45.036 25.316V35H38.196V15.488H44.712V17.54C45.432 16.748 46.284 16.16 47.268 15.776C48.276 15.368 49.368 15.164 50.544 15.164C51.912 15.164 53.136 15.416 54.216 15.92C55.296 16.424 56.172 17.192 56.844 18.224C57.612 17.24 58.584 16.484 59.76 15.956C60.936 15.428 62.22 15.164 63.612 15.164ZM78.6932 35.324C77.5412 35.324 76.5692 34.94 75.7772 34.172C74.9852 33.404 74.5892 32.432 74.5892 31.256C74.5892 30.056 74.9732 29.084 75.7412 28.34C76.5332 27.596 77.5172 27.224 78.6932 27.224C79.8932 27.224 80.8772 27.596 81.6452 28.34C82.4132 29.084 82.7972 30.056 82.7972 31.256C82.7972 32.432 82.4012 33.404 81.6092 34.172C80.8412 34.94 79.8692 35.324 78.6932 35.324Z" fill="#7453C7"/>
+					<rect y="36.9438" width="31.246" height="9.27451" rx="4.63725" transform="rotate(-40 0 36.9438)" fill="#46E6C9" fill-opacity="0.63"/>
+					<rect x="6.07568" y="2.6062" width="31.2457" height="9.27451" rx="4.63725" transform="rotate(40 6.07568 2.6062)" fill="#7453C7" fill-opacity="0.47"/>
+				</svg>
+			</a>
+
+			<nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
+				{% for item in menus.main.items %}
+					<a href="#" class="font-medium text-gray-500 hover:text-gray-900 mx-2 dark:text-zinc-300">{{item.title}}</a>
+				{% endfor %}
+			</nav>
+
+		</div>
+		
+	</div>
+
+</header>
