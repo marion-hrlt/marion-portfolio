@@ -597,54 +597,6 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@font-face {
-  font-family: "Poppins";
-  font-weight: 200;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-ExtraLightcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-Lightcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-Regularcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-Mediumcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-SemiBoldcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-Boldcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 800;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-ExtraBoldcapitalize().ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 900;
-  font-display: swap;
-  src: url("../fonts/Poppins/Poppins-Blackcapitalize().ttf") format("truetype");
-}
 #hero h1 {
   font-family: "Poppins", sans-serif;
   font-size: 82px;
