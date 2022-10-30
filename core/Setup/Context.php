@@ -23,6 +23,7 @@ class Context
     public function run()
     {
         add_filter('timber_context', [$this, 'add_nav_menus']);
+        add_filter('timber_context', [$this, 'add_link_directory']);
     }
 
     /**
@@ -37,6 +38,12 @@ class Context
             $context['menus']['main'] = new Menu('primary');
         }
 
+        return $context;
+    }
+
+    public function add_link_directory($context)
+    {
+        $context['directory'] = get_stylesheet_directory_uri();
         return $context;
     }
 }

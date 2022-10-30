@@ -1,17 +1,8 @@
-$font-primary: "Poppins", sans-serif;
-$font-secondary: "Sarabun", sans-serif;
-$color-primary: rgba(197, 130, 255, 0.519);
-$color-white: #fff;
-
 body {
 	font-family: $font-primary;
 }
 
 ::selection {
-	background: $color-primary;
-	color: $color-white;
-}
-
-.navigation {
-	font-family: $font-secondary;
+	background: var(--primary);
+	color: var(--white);
 }
