@@ -3,7 +3,7 @@
 /**
  * Setup::Context
  *
- * @package ThemeBasis Theme
+ * @package MarionPortfolio Theme
  */
 
 namespace App\Setup;

@@ -3,7 +3,7 @@
 /**
  * Setup::Assets
  *
- * @package ThemeBasis Theme
+ * @package MarionPortfolio Theme
  */
 
 namespace App\Setup;
@@ -35,7 +35,7 @@ class Assets
     public function enqueue_styles()
     {
         $version     = wp_get_theme()->get('Version');
-        wp_enqueue_style('theme-basis/styles', get_template_directory_uri() . '/assets/public/styles/app.css', false, $version);
+        wp_enqueue_style('marion-portfolio/styles', get_template_directory_uri() . '/assets/public/styles/app.css', false, $version);
     }
 
     /**
@@ -46,6 +46,6 @@ class Assets
     public function enqueue_scripts()
     {
         $version = wp_get_theme()->get('Version');
-        wp_enqueue_script('theme-basis/scripts', get_template_directory_uri() . '/assets/public/scripts/app.js', [], $version, false);
+        wp_enqueue_script('marion-portfolio/scripts', get_template_directory_uri() . '/assets/public/scripts/app.js', [], $version, false);
     }
 }

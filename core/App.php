@@ -24,7 +24,9 @@ class App
     {
         $services = array(
             Setup\Assets::class,
-            Setup\Context::class
+            Setup\Context::class,
+
+            Admin\Projects::class,
         );
 
         return $services;
@@ -49,4 +51,3 @@ class App
         }
     }
 }
-
