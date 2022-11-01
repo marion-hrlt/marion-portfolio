@@ -1,0 +1,10 @@
+<div class="projects__item relative">
+	<div class="overlay absolute top-0 left-0 w-full h-full z-5" style="--overlay: {{ post.project_color }}"></div>
+	{{ fn('wp_get_attachment_image', post.thumbnail.id, 'medium_large') }}
+
+	<div class="content z-10">
+		{{ fn('wp_get_attachment_image', post.project_logo, 'medium') }}
+		<a class="font-extrabold" href="{{ post.link }}">{{ post.title }}</a>
+		<p class="font-regular mt-4">{{post.project_excerpt}}</p>
+	</div>
+</div>

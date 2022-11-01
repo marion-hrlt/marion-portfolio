@@ -7,7 +7,7 @@
 {% block content %}
 	{% include 'layout/_hero.twig' %}
 
-	<div class="container mx-auto my-24 flex items-center justify-around">
+	<div class="container mx-auto mt-32 mb-60 flex items-center justify-around">
 		<div class="mx-6 px-6">
 			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Front-end</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -23,6 +23,29 @@
 	</div>
 
 
-	{% include 'shortcodes/_projects.twig' %}
+	<div class="my-32 py-16 bg-gray-100 project-section">
+		<div class="container mx-auto">
+
+			<h2>Réalisations</h2>
+
+			<div class="projects-content flex items-end justify-between">
+				<div class="projects-more w-96 mb-14">
+
+					<p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
+				</div>
+
+				<div class="projects flex items-center justify-center">
+					{% if newest_projects %}
+						{% for post in newest_projects %}
+							{% include 'component-project.twig' %}
+						{% endfor %}
+					{% endif %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 
 {% endblock %}
