@@ -7,43 +7,48 @@
 {% block content %}
 	{% include 'layout/_hero.twig' %}
 
-	<div class="container mx-auto mt-32 mb-60 flex items-center justify-around">
+	<div class="container mx-auto mt-6 mb-60 flex items-center justify-around">
 		<div class="mx-6 px-6">
+			<img src="{{directory}}/assets/public/images/picto-front.png" class="mb-4" width="40" alt="">
 			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Front-end</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
 		</div>
 		<div class="mx-6 px-6">
+			<img src="{{directory}}/assets/public/images/picto-back.png" class="mb-4" width="40" alt="">
 			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Back-end</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 		<div class="mx-6 px-6">
+			<img src="{{directory}}/assets/public/images/picto-wp.png" class="mb-4" width="40" alt="">
 			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Personnalisé</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
 		</div>
 	</div>
 
 
-	<div class="my-32 py-16 bg-gray-100 project-section">
+	<div class="my-28 py-16 bg-gray-100 project-section">
 		<div class="container mx-auto">
 
-			<h2>Réalisations</h2>
-
-			<div class="projects-content flex items-end justify-between">
-				<div class="projects-more w-96 mb-14">
-
-					<p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
-				</div>
-
-				<div class="projects flex items-center justify-center">
-					{% if newest_projects %}
-						{% for post in newest_projects %}
-							{% include 'component-project.twig' %}
-						{% endfor %}
-					{% endif %}
-				</div>
-
+			<div class="project-section__head">
+				<h2 class="text-center mb-6">Projets</h2>
+				<p class="mb-10 text-center max-w-3xl flex justify-center mx-auto text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 			</div>
+
+
+			<div class="projects-newest">
+				{% if newest_projects %}
+					{% for post in newest_projects %}
+						{% include 'component-project.twig' %}
+					{% endfor %}
+				{% endif %}
+			</div>
+
+			<div class="project-section__footer">
+				<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
+			</div>
+
 		</div>
 	</div>
 

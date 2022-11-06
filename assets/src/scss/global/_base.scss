@@ -1,5 +1,9 @@
 body {
 	font-family: $font-primary;
+
+	p{
+		font-size: 14px;
+	}
 }
 
 ::selection {
