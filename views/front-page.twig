@@ -28,14 +28,14 @@
 	</div>
 
 
-	<div class="my-28 py-16 bg-gray-100 project-section">
+	<div class="mt-28 mb-0 py-28 bg-gray-100 project-section">
 		<div class="container mx-auto">
 
 			<div class="project-section__head">
 				<h2 class="text-center mb-6">Projets</h2>
-				<p class="mb-10 text-center max-w-3xl flex justify-center mx-auto text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				<p class="mb-10 text-center max-w-3xl flex justify-center mx-auto text-gray-800">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
+				<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
 			</div>
-
 
 			<div class="projects-newest">
 				{% if newest_projects %}
@@ -45,9 +45,22 @@
 				{% endif %}
 			</div>
 
-			<div class="project-section__footer">
-				<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
-			</div>
+		</div>
+	</div>
+
+	<div class="py-28 dev-section">
+
+
+		<img class="back-illustration" src="{{directory}}/assets/public/images/back-code.svg" alt="">
+
+		<div class="container mx-auto py-28 pl-36 flex justify-center w-1/2 flex-col">
+
+
+			<h2 class="mb-6">
+				Espace dev
+			</h2>
+			<p class="mb-10 max-w-3xl text-gray-800">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
+			<a href="#">Consulter les tips</a>
 
 		</div>
 	</div>
