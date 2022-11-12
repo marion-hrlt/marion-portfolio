@@ -1,64 +1,128 @@
+// Poppins
+// -------------------------------------------------------
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Thin.ttf");
-    font-weight: 100;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Thin.ttf");
+	font-weight: 100;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
-    font-weight: 200;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
+	font-weight: 200;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Light.ttf");
-    font-weight: 300;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Light.ttf");
+	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Regular.ttf");
-    font-weight: 400;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Regular.ttf");
+	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Medium.ttf");
-    font-weight: 500;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Medium.ttf");
+	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
-    font-weight: 600;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+	font-weight: 600;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Bold.ttf");
-    font-weight: 700;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Bold.ttf");
+	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-ExtraBold.ttf");
-    font-weight: 800;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-ExtraBold.ttf");
+	font-weight: 800;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins/Poppins-Black.ttf");
-    font-weight: 900;
-    font-display: swap;
+	font-family: "Poppins";
+	src: url("../fonts/Poppins/Poppins-Black.ttf");
+	font-weight: 900;
+	font-display: swap;
 }
 
-$font-primary: 'Poppins', sans-serif;
+// Sarabun
+// -------------------------------------------------------
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-Thin.ttf");
+	font-weight: 100;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-ExtraLight.ttf");
+	font-weight: 200;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-Light.ttf");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-Regular.ttf");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-Medium.ttf");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-SemiBold.ttf");
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-Bold.ttf");
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url("../fonts/Sarabun/Sarabun-ExtraBold.ttf");
+	font-weight: 800;
+	font-display: swap;
+}
+
+// Variables
+// -------------------------------------------------------
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Sarabun", sans-serif;

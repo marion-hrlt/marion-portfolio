@@ -1,0 +1,32 @@
+.btn-primary {
+	@apply relative flex items-center z-10 px-5 pl-4 pr-6;
+
+	&::before {
+		content: "";
+		@apply absolute top-1/2 left-0 bg-violet-400 rounded-full -z-10 -translate-y-2/4;
+		width: 52px;
+		height: 52px;
+		transition: 0.4s;
+	}
+
+	span {
+		@apply text-white uppercase text-sm;
+		font-family: $font-secondary;
+		letter-spacing: 1px;
+	}
+
+	svg {
+		@apply w-4 h-4 text-white transition ml-1;
+	}
+
+	&:hover {
+		&::before {
+			@apply bg-violet-600;
+			width: 100%;
+		}
+
+		svg {
+			@apply translate-x-2;
+		}
+	}
+}

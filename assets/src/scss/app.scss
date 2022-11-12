@@ -12,9 +12,9 @@
 @import "global/base";
 
 // Layout
+@import "layouts/header";
 @import "layouts/headings";
+@import "layouts/buttons";
 @import "layouts/hero";
 
 // Components
-@import "components/newest-projects";
-@import "components/dev-section";
