@@ -11,9 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{ function('wp_head') }}
 	</head>
-	<body class="{{ body_class }}">
+	<body class="{{ body_class }} bg-gray-900">
 		{% include 'layout/_header.twig' %}
-		{% block content endblock %}
+		<main id="swup" class="transition-fade">
+			{% block content endblock %}
+		</main>
 		{% include 'layout/_footer.twig' %}
 		{{ function('wp_footer') }}
 	</body>

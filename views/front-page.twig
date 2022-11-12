@@ -7,40 +7,55 @@
 {% block content %}
 	{% include 'layout/_hero.twig' %}
 
-	<div class="container mx-auto mt-6 mb-60 flex items-center justify-around">
-		<div class="mx-6 px-6">
-			<img src="{{directory}}/assets/public/images/picto-front.png" class="mb-4" width="40" alt="">
-			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Front-end</h2>
-			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+
+	<div class="container mx-auto mt-10 mb-48 flex items-center justify-around">
+		<div class="mx-6 px-6">
+			<svg class="stroke-gray-300 w-12 h-12 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
+			</svg>
+			<h2 class="text-gray-300 font-extrabold text-xl mb-3">Front-end</h2>
+			<p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 		</div>
 		<div class="mx-6 px-6">
-			<img src="{{directory}}/assets/public/images/picto-back.png" class="mb-4" width="40" alt="">
-			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Back-end</h2>
-			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<svg class="stroke-gray-300 w-12 h-12 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+			</svg>
+			<h2 class="text-gray-300 font-extrabold text-xl mb-3">Back-end</h2>
+			<p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 		</div>
 		<div class="mx-6 px-6">
-			<img src="{{directory}}/assets/public/images/picto-wp.png" class="mb-4" width="40" alt="">
-			<h2 class="text-purple-700 font-extrabold text-xl mb-3">Personnalisé</h2>
-			<p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+			<svg class="stroke-gray-300 w-12 h-12 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
+			</svg>
+			<h2 class="text-gray-300 font-extrabold text-xl mb-3">Personnalisé</h2>
+			<p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 		</div>
 	</div>
 
 
-	<div class="mt-28 mb-0 py-28 bg-gray-100 project-section">
+	<div class="mt-2 mb-0 py-28 bg-gray-800 project-section">
 		<div class="container mx-auto">
 
 			<div class="project-section__head">
 				<h2 class="text-center mb-6">Projets</h2>
-				<p class="mb-10 text-center max-w-3xl flex justify-center mx-auto text-gray-800">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
-				<a href="{{ fn('get_post_type_archive_link', 'project') }}">Voir plus de projets</a>
+				<p class="mb-10 text-center max-w-3xl flex justify-center mx-auto text-gray-300">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
+				<div class="flex mx-auto justify-center">
+					<a class="btn-primary" href="{{ fn('get_post_type_archive_link', 'project') }}">
+						<span>Voir plus de projets</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+						</svg>
+					</a>
+				</div>
 			</div>
 
-			<div class="projects-newest">
+			<div class="flex justify-center items-center mt-20">
 				{% if newest_projects %}
 					{% for post in newest_projects %}
-						{% include 'component-project.twig' %}
+						<div class="relative drop-shadow-2xl mx-6 cursor-pointer transition w-80 hover:-translate-y-2">
+							{{ fn('wp_get_attachment_image', post.thumbnail.id, 'large') }}
+						</div>
 					{% endfor %}
 				{% endif %}
 			</div>
@@ -48,19 +63,26 @@
 		</div>
 	</div>
 
-	<div class="py-28 dev-section">
+	<div class="py-28 relative">
 
+		<svg class="absolute -top-20 -left-10 -z-10" width="504" height="799" viewBox="0 0 504 799" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect opacity="0.18" width="631.421" height="184.842" rx="92.4209" transform="matrix(0.791578 0.611069 0.669375 -0.742925 -122 137.324)" fill="#E5E7EB" fill-opacity="0.28"/>
+			<rect opacity="0.18" width="631.131" height="184.927" rx="92.4637" transform="matrix(0.787949 -0.615741 -0.673877 -0.738844 6.70117 799)" fill="#E5E7EB" fill-opacity="0.28"/>
+		</svg>
 
-		<img class="back-illustration" src="{{directory}}/assets/public/images/back-code.svg" alt="">
-
-		<div class="container mx-auto py-28 pl-36 flex justify-center w-1/2 flex-col">
-
-
+		<div class="container mx-auto py-28 flex justify-center w-96 flex-col">
 			<h2 class="mb-6">
 				Espace dev
 			</h2>
-			<p class="mb-10 max-w-3xl text-gray-800">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
-			<a href="#">Consulter les tips</a>
+			<p class="mb-10 max-w-3xl text-gray-300">Découvrez mes projets et mes contributions, réalisés dans le cadre professionnel ou dans le cadre de mes études. Retrouvez aussi quelques projets personnels.</p>
+			<div class="flex">
+				<a class="btn-primary" href="#">
+					<span>Consulter les tips</span>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+					</svg>
+				</a>
+			</div>
 
 		</div>
 	</div>

@@ -36,6 +36,7 @@ class Assets
     {
         $version     = wp_get_theme()->get('Version');
         wp_enqueue_style('marion-portfolio/styles', get_template_directory_uri() . '/assets/public/styles/app.css', false, $version);
+
     }
 
     /**
@@ -47,5 +48,10 @@ class Assets
     {
         $version = wp_get_theme()->get('Version');
         wp_enqueue_script('marion-portfolio/scripts', get_template_directory_uri() . '/assets/public/scripts/app.js', [], $version, false);
+    
+        //Sert à passer des infos php au js (Fetch/Ajax)
+		wp_localize_script('marion-portfolio/scripts', 'm_portfolio', [
+			'ajax_url' => admin_url('admin-ajax.php'),
+		]);
     }
 }

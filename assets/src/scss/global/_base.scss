@@ -1,12 +1,26 @@
 body {
 	font-family: $font-primary;
 
-	p{
+	p {
 		font-size: 14px;
 	}
 }
 
 ::selection {
-	background: var(--primary);
-	color: var(--white);
+	background: #c7d2fe;
+	color: #6365f1;
+}
+
+.transition-fade {
+	transition: 0.4s;
+	opacity: 1;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
+}
+
+.swup-progress-bar {
+	height: 2px;
+	@apply bg-violet-800;
 }
