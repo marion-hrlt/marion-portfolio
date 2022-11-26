@@ -1,0 +1,33 @@
+{#
+    * Front page
+    * @package MarionPortfolio
+#}
+{% extends "layout/default.twig" %}
+
+{% block content %}
+
+	{% set tags = post.terms( {query:{taxonomy:'project-tag'}} )|default(0) %}
+
+    <div class="h-72 relative w-full bg-gray-800">
+        <div class="container mx-auto h-full flex flex-col justify-center">
+            <h1 class="flex h-full items-end mb-2 text-gray-300 font-bold text-4xl">
+                {{ post.title }}
+            </h1>
+            <div class="flex mb-8">
+                {% if tags %}
+                    {% for tag in tags %}
+                        <span class="secondary-font bg-violet-600 text-gray-300 uppercase mx-1 px-2 text-sm">{{ tag.name }}</span>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <section id="single-project" class="page">
+        <div class="container max-w-4xl mx-auto text-gray-300 py-16">
+            {{ post.content }}
+        </div>
+    </section>
+
+
+{% endblock %}

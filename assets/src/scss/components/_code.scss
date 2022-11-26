@@ -1,0 +1,32 @@
+pre {
+	background: #1f2938 !important;
+	border-radius: 10px;
+	margin: 3rem 0 !important;
+	font-size: 13px !important;
+
+	.token {
+		&.comment {
+			color: #8d8d8d;
+		}
+
+		&.keyword {
+			color: #c990cc;
+		}
+
+		&.function-definition {
+			color: #558ee4;
+		}
+
+		&.function:not(.function-definition) {
+			color: #fbe977;
+		}
+
+		&.variable {
+			color: #f1f1f1;
+		}
+
+		&.string {
+			color: #ffc086;
+		}
+	}
+}

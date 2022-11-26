@@ -3,8 +3,7 @@
 /**
  * Theme functions
  *
- * @package ThemeBasis
- * @since ThemeBasis 1.0
+ * @package marion portfolio
  */
 
 // Include vendors

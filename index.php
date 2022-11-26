@@ -3,8 +3,7 @@
 /**
  * The main template file
  *
- * @package LightMint
- * @since LightMint 1.0
+ * @package marion portfolio
  */
 
 defined('ABSPATH') || die('Cheating?');

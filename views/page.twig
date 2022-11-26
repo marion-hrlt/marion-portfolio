@@ -1,0 +1,25 @@
+{#
+    * Page template
+    * @package MarionPortfolio
+#}
+{% extends "layout/default.twig" %}
+
+{% block content %}
+
+    <div class="h-56 relative w-full bg-gray-800">
+        <div class="container mx-auto h-full flex flex-col justify-center">
+            <h1 class="flex h-full items-end mb-8 text-gray-300 font-bold text-4xl">
+                {{ post.title }}
+            </h1>
+        </div>
+    </div>
+
+    
+    <section id="page-{{post.ID}}" class="page">
+        <div class="container max-w-4xl mx-auto text-gray-300 py-24">
+            {{ post.content }}
+        </div>
+    </section>
+
+
+{% endblock %}

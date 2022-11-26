@@ -27,6 +27,7 @@ class App
             Setup\Context::class,
 
             Admin\Projects::class,
+            Admin\Snippets::class,
         );
 
         return $services;

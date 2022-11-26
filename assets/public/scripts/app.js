@@ -873,8 +873,7 @@ exports["default"] = SwupProgressPlugin;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_swup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/swup */ "./assets/src/js/components/swup.js");
-console.log("JS chargé"); // import "./components/darkmode";
-
+console.log("JS chargé");
 
 
 /***/ }),
@@ -897,7 +896,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function init() {}
+function init() {
+  Prism.highlightAll();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   var swup = new swup__WEBPACK_IMPORTED_MODULE_0__["default"]({

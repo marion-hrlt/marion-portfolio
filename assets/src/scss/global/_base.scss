@@ -2,13 +2,24 @@ body {
 	font-family: $font-primary;
 
 	p {
-		font-size: 14px;
+		font-size: 15px;
+	}
+
+	&.logged-in {
+		header {
+			@apply top-6;
+		}
+	}
+}
+
+.single {
+	p {
+		margin-bottom: 20px;
 	}
 }
 
 ::selection {
-	background: #c7d2fe;
-	color: #6365f1;
+	@apply bg-violet-100 text-violet-600;
 }
 
 .transition-fade {
@@ -22,5 +33,5 @@ html.is-animating .transition-fade {
 
 .swup-progress-bar {
 	height: 2px;
-	@apply bg-violet-800;
+	@apply bg-violet-800 z-20;
 }

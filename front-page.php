@@ -1,10 +1,9 @@
 <?php
 
 /**
- * The main template file
+ * The front page template file
  *
- * @package LightMint
- * @since LightMint 1.0
+ * @package MarionPortfolio
  */
 
 defined('ABSPATH') || die('Cheating?');
@@ -17,7 +16,7 @@ use Timber\Timber;
 $context = Timber::context();
 $context['newest_projects'] = new PostQuery([
     'post_type' => 'project',
-    'posts_per_page' => 5,
+    'posts_per_page' => 3,
 ]);
 
 $templates = array('front-page.twig');

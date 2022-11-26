@@ -3,7 +3,9 @@ import SwupFadeTheme from "@swup/fade-theme";
 import SwupBodyClassPlugin from "@swup/body-class-plugin";
 import SwupProgressPlugin from "@swup/progress-plugin";
 
-function init() {}
+function init() {
+	Prism.highlightAll();
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 	const swup = new Swup({

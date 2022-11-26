@@ -1,0 +1,48 @@
+{#
+    * Front page
+    * @package MarionPortfolio
+#}
+{% extends "layout/default.twig" %}
+
+{% block content %}
+
+    <div class="h-56 relative w-full bg-gray-800">
+        <div class="container mx-auto h-full flex flex-col justify-center">
+            <h1 class="flex h-full items-end mb-8 text-gray-300 font-bold text-4xl">
+                {{ title }}
+            </h1>
+        </div>
+    </div>
+    
+    <section id="archive-project" class="page">
+        <div class="container mx-auto text-gray-300 py-16">
+            <p>Je vous partage ici des tips, tutos et fonctions utiles pour votre site Wordpress.</p>
+        </div>
+
+        <div class="container mx-auto grid grid-cols-3 mt-8 mb-20">
+            {% if posts %}
+                {% for post in posts %}
+                    
+                    {% set terms = post.terms( {query:{taxonomy:'snippet-tag'}} )|default(0) %}
+
+                    <div class="relative drop-shadow-2xl mx-6 p-6 cursor-pointer transition hover:-translate-y-2 bg-gray-800">
+                        <a class="absolute top-0 left-0 w-full h-full" href="{{post.link}}"></a>
+                        <p class="text-gray-300 font-semibold text-lg mb-2">{{post.title}}</p>
+
+                        {% if terms %}
+                            <div class="flex flex-wrap">
+                                {% for term in terms %}
+                                    <span class="bg-purple-600 text-gray-300 text-xs px-2 py-1 mr-2 mb-2">{{term.name}}</span>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        <p class="text-gray-300 text-sm my-2">{{post.preview.length(50).read_more('...')}}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+
+
+{% endblock %}
